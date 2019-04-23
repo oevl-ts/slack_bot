@@ -20,4 +20,5 @@ def mention_func(message):
 
 @default_reply()
 def default_func(message):
+    message.reply(DEFAULT_RREPLY)
     message.react('pray')
