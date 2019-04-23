@@ -1,7 +1,6 @@
 import requests
 import json
 
-# Ploblems API
 api = 'https://kenkoooo.com/atcoder/atcoder-api/v2/user_info?user='
 url = 'https://atcoder.jp/users/{name}/history/json'
 
@@ -39,7 +38,7 @@ def getRate():
   # ソート
   list.sort(reverse = True)
 
-  # 投稿するメッセージを作成
+  # メッセージを作成
   msg = '「AtCoder レートランキングです！」\n'
   for i, data in enumerate(list):
     msg += str(i + 1) + ' : '
@@ -47,5 +46,5 @@ def getRate():
     msg += str(data[0]) + '\n'
   return msg
 
-print(getAC())
-print(getRate())
+# print(getAC())
+# print(getRate())
