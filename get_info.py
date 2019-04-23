@@ -9,7 +9,7 @@ url = 'https://atcoder.jp/users/{name}/history/json'
 with open('./users.json') as u:
   users = json.load(u)
 
-# AC数のランキングを取得して、投稿するメッセージを作成
+# AC数を取得して、投稿するメッセージを作成
 def getAC():
   # ユーザのAC数を取得
   list = []
@@ -20,7 +20,7 @@ def getAC():
   # ソート
   list.sort(reverse = True)
 
-  # 投稿するメッセージを作成
+  # メッセージを作成
   msg = '「AtCoder AC数ランキングです！」\n'
   for i, data in enumerate(list):
     msg += str(i + 1) + ' : '
@@ -28,7 +28,7 @@ def getAC():
     msg += str(data[0]) + '\n'
   return msg
 
-# レートランキングを取得して、投稿するメッセージを作成
+# レートを取得して、投稿するメッセージを作成
 def getRate():
   # ユーザのレートを取得
   list = []
