@@ -6,7 +6,14 @@ import get_info as gi
 @respond_to('AC')
 def mention_func(message):
     message.reply(gi.getAC())
+    message.react('+1')
 
 @respond_to('レート')
 def mention_func(message):
     message.reply(gi.getRate())
+    message.react('+1')
+
+@respond_to('ソース', 'コード')
+def mention_func(message):
+    message.reply('https://github.com/oevlreyo/slack_bot')
+    message.react('sunglasses')
