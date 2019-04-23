@@ -13,7 +13,8 @@ def mention_func(message):
     message.reply(gi.getRate())
     message.react('smiley')
 
-@respond_to(r'ソース' or r'コード')
+@respond_to(r'ソースコード')
 def mention_func(message):
+    message.reply('「ソースコードです！」')
     message.reply('https://github.com/oevlreyo/slack_bot')
     message.react('sunglasses')
