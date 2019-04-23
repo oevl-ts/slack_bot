@@ -17,3 +17,7 @@ def mention_func(message):
 def mention_func(message):
     message.reply('「ソースコードです！」\n' + 'https://github.com/oevlreyo/slack_bot')
     message.react('sunglasses')
+
+@default_reply()
+def default_func(message):
+    message.react('pray')
