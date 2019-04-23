@@ -20,7 +20,7 @@ def getAC():
   list.sort(reverse = True)
 
   # メッセージを作成
-  msg = '「AtCoder AC数ランキングです！」\n'
+  msg = ''
   for i, data in enumerate(list):
     msg += str(i + 1) + ' : '
     msg += data[1] + ' : '
@@ -39,7 +39,7 @@ def getRate():
   list.sort(reverse = True)
 
   # メッセージを作成
-  msg = '「AtCoder レートランキングです！」\n'
+  msg = ''
   for i, data in enumerate(list):
     msg += str(i + 1) + ' : '
     msg += data[1] + ' : '

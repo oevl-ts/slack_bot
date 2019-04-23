@@ -5,11 +5,13 @@ import get_info as gi
 
 @respond_to(r'AC')
 def mention_func(message):
+    message.reply('「AtCoder AC数ランキングです！」')
     message.reply(gi.getAC())
     message.react('+1')
 
 @respond_to(r'レート')
 def mention_func(message):
+    message.reply('「AtCoder レートランキングです！」')
     message.reply(gi.getRate())
     message.react('smiley')
 
