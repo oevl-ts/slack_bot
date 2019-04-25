@@ -54,4 +54,4 @@ def getCFRating():
 # デバッグ用
 # print(getAC())
 # print(getRating())
-# print(getCFRating())
+print(getCFRating())
