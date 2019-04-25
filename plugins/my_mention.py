@@ -13,7 +13,7 @@ def mention_func(message):
     message.reply('「AtCoder レートランキングです！」\n' + gi.getRating())
     message.react('smiley')
 
-@respond_to(r'CF')
+@respond_to(r'こどふぉ')
 def mention_func(message):
     message.reply('「Codeforces レートランキングです！」\n' + gi.getCFRating())
     message.react('ru')
