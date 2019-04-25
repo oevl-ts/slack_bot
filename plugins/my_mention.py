@@ -25,5 +25,5 @@ def mention_func(message):
 
 @default_reply()
 def default_func(message):
-    message.reply("「レート」「AC」を含むメッセージを送信してください")
+    message.reply("「レート」「AC」「こどふぉ」")
     message.react('pray')
