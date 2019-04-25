@@ -10,8 +10,13 @@ def mention_func(message):
 
 @respond_to(r'レート')
 def mention_func(message):
-    message.reply('「AtCoder レートランキングです！」\n' + gi.getRate())
+    message.reply('「AtCoder レートランキングです！」\n' + gi.getRating())
     message.react('smiley')
+
+@respond_to(r'CF')
+def mention_func(message):
+    message.reply('「Codeforces レートランキングです！」\n' + gi.getCFRating())
+    message.react('ru')
 
 @respond_to(r'ソースコード')
 def mention_func(message):
