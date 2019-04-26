@@ -38,7 +38,7 @@ def makeMsg(list):
   msg = ''
   list.sort(reverse = True)
   for i, data in enumerate(list):
-    msg += str(i + 1) + '.' + data[1] + ' (' + str(data[0]) + ')\n'
+    msg += str(i + 1) + '. ' + data[1] + ' (' + str(data[0]) + ')\n'
   return msg
 
 # 以下はbotが直接呼び出す関数
