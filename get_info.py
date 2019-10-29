@@ -55,3 +55,15 @@ def getCFRating():
 # print(getAC())
 # print(getRating())
 # print(getCFRating())
+
+# 最新回のパフォーマンスを取得
+# url = 'https://atcoder.jp/users/{name}/history/json'
+def getInfo():
+  list = []
+  for user in users['ac']:
+    data = json.loads(requests.get(url.format(name=user)).text)
+    list.append([data[-1]['Performance'], user])
+  return list
+
+list = getInfo()
+print(list)
