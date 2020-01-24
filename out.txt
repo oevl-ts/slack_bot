@@ -1,0 +1,20 @@
+「AtCoder Beginner Contest 152 の成績です！」
+1. oevl(598)
+perf: 1583
+rating: 1427 -> 1444 (+17)
+2. toto61(1159)
+perf: 1254
+rating: 874 -> 919 (+45)
+3. Alpha_giraffe(1216)
+perf: 1229
+rating: 1155 -> 1163 (+8)
+4. shompepe(1716)
+perf: 1036
+rating: 938 -> 949 (+11)
+5. seriru(2048)
+perf: 929
+rating: 1047 -> 1036 (-11)
+6. herp_sy(4604)
+perf: 130
+rating: 452 -> 423 (-29)
+

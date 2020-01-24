@@ -18,6 +18,11 @@ def mention_func(message):
     message.reply('「Codeforces レートランキングです！」\n' + gi.getCFRating())
     message.react('ru')
 
+@respond_to(r'成績')
+def mention_func(message):
+    message.reply(gi.getResult())
+    message.react('+1')
+
 @respond_to(r'ソースコード')
 def mention_func(message):
     message.reply('「ソースコードです！」\n' + 'https://github.com/oevlreyo/slack_bot')
@@ -25,5 +30,5 @@ def mention_func(message):
 
 @default_reply()
 def default_func(message):
-    message.reply("「レート」「AC」「こどふぉ」")
+    message.reply("以下のワードに反応します\n「レート」「AC」「こどふぉ」「成績」")
     message.react('pray')
