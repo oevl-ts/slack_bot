@@ -89,6 +89,7 @@ def getResult():
 # print(getAC())
 # print(getRating())
 # print(getCFRating())
+print(makeResultMsg(getResultList()))
 
 # {'name': 'oevl', 'Performance': 1583, 'ContestName': 'AtCoder Beginner Contest 152', 'InnerPerformance': 1583, 'ContestNameEn': '', 'EndTime': '2020-01-19T22:30:00+09:00', 'OldRating': 1427, 'NewRating': 1444, 'IsRated': True, 'ContestScreenName': 'abc152.contest.atcoder.jp', 'Place': 598}
 
